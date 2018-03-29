@@ -64,10 +64,10 @@ echo -e "\033[1;37mEscoja las opciones:    \033[1;37mPara Salir Ctrl + C\033[1;3
 [5] DetalleUsuarios \033[2;36m(Mostrar informacion de usuarios activos !!)\033[1;34m
 [6] Usersinactive \033[2;36m(Mostrar informacion de usuarios inactivos!!)\033[1;34m
 [7] speedtest \033[2;36m(Tester de conexion [velocidade de banda])\033[1;34m
-[9] SystemDetalles \033[2;36m(Detalles sobre el Sistema)\033[1;34m
-[10] graphicsystem \033[2;36m(Detalles sobre  VpsPack)\033[1;34m
-[11] Ayuda \033[2;36m(Mostrar un grafico con informacion del sistema)\033[1;34m
-[12] Mas \033[2;36m(Mostrar mas opciones)\033[0m"
+[8] SystemDetalles \033[2;36m(Detalles sobre el Sistema)\033[1;34m
+[9] graphicsystem \033[2;36m(Detalles sobre  VpsPack)\033[1;34m
+[10] Ayuda \033[2;36m(Mostrar un grafico con informacion del sistema)\033[1;34m
+[11] Mas \033[2;36m(Mostrar mas opciones)\033[0m"
 read -p "[1-10]: " opcao
 
 case $opcao in
