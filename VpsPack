@@ -8,7 +8,7 @@ else
         then
         clear
         echo "Voce não é root"
-        echo "Seu usuario esta no grupo sudo"
+        echo "Su usuario esta en grupo sudo"
         echo -e "Para virar root execute \033[1;31msudo su\033[0m"
         pack
         exit
@@ -59,17 +59,14 @@ echo -e "\033[1;37m VpsPacket © Script Modified por: \033[2;32mManahkl KB \033[
 echo -e "\033[1;31mEscoja las opciones:    \033[1;31mPara Salir Ctrl + C\033[1;36m
 [1] CrearUsuario \033[2;33m(Crear usuarios para SSH y OpenVPN)\033[1;36m
 [2] RedefinirUsuario \033[2;33m(Opciones para mudanzas de usuario)\033[1;36m
-[3] TransferirUsuarios\033[2;33m(Copiar usuarios para otros servidores)\033[1;36m
-[4] Usercreate-noroot \033[2;36m(Crear usuario Adiministrador sin privilegio root)\033[1;34m
-[5] UserDel-noroot \033[2;36m(Apagar usuarios Administrador)\033[1;34m
-[6] DetalleDeUsuario \033[2;33m(Mostrar informacion de un unico usuario !!)\033[1;36m
-[7] DetallesDeUsuarios \033[2;33m(Mostrar informacion de usuarios activos !!)\033[1;36m
-[8] UsuariosInactivos \033[2;33m(Mostrar informacion de usuarios inactivos!!)\033[1;36m
-[9] Speedtest \033[2;33m(Tester de conexion [velocidad de banda])\033[1;36m
-[10] SystemDetalls \033[2;33m(Detalles sobre el Sistema)\033[1;36m
-[11] GraphicSystem \033[2;33m(Detalles sobre VpsPack)\033[1;36m
-[12] Ayuda \033[2;33m(Mostrar un grafico con informacion del sistema)\033[1;36m
-[13] Mas \033[2;33m(Mostrar mas opciones)\033[0m"
+[3] DetalleDeUsuario \033[2;33m(Mostrar informacion de un unico usuario !!)\033[1;36m
+[4] DetallesDeUsuarios \033[2;33m(Mostrar informacion de usuarios activos !!)\033[1;36m
+[5] UsuariosInactivos \033[2;33m(Mostrar informacion de usuarios inactivos!!)\033[1;36m
+[6] Speedtest \033[2;33m(Tester de conexion [velocidad de banda])\033[1;36m
+[7] SystemDetalls \033[2;33m(Detalles sobre el Sistema)\033[1;36m
+[8] GraphicSystem \033[2;33m(Detalles sobre VpsPack)\033[1;36m
+[9] Ayuda \033[2;33m(Mostrar un grafico con informacion del sistema)\033[1;36m
+[10] Mas \033[2;33m(Mostrar mas opciones)\033[0m"
 read -p "[1-10]: " opcao
 
 case $opcao in
@@ -82,46 +79,34 @@ case $opcao in
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  3)
-  transferirusers
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-  VpsPack;;
- 4)
-  Usercreate-noroot
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
-  VpsPack;;
- 5)
-  UserDel-noroot
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
-  VpsPack;;
- 6)
   detalhesuser
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 7)
+ 4)
   detalhesusers
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 8)
+ 5)
   Usersinative
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 9)
+ 6)
   speedtest
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 10)
+ 7)
   systemdetalhes
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 11)
+ 8)
   htop
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 12)
+ 9)
   Ayuda
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 13)
+ 10)
   Mas
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
