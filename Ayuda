@@ -6,9 +6,9 @@ Vc pode virar root com \033[1;31msu \033[1;33mou \033[1;31msudo su"
 echo -e "\033[1;32m
 Ferramenta Limit:\033[1;36m
 
-Essa ferramenta monitora o numero de conexoes de usuarios que teve seu limite aplicado
-Use essa ferramenta pelo VpsPack (recomendado)
-Tbm pode a usar com apenas um comando \033[1;33mlimit usuario limite\033[0m
+Esta herramienta monitorea el numero de conexiones de usuarios que tenga su limite aplicado
+Use esta herramienta para VpsPack (recomendado)
+Tbm puede usar con apenas un comando \033[1;33mlimit usuario limite\033[0m
 \033[1;36mAo exceder o limite as conexoes excedentes serao desconectados !!
  
 \033[1;32mUserCreate:
