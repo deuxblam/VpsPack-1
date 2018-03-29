@@ -5,7 +5,7 @@ echo ""
 echo -e "\033[1;31mVocê não tem usuarios existentes!\033[0m"
 exit 6
 fi
-echo -e "\033[44;1;37m        Redefina um Usuário          \033[0m"
+echo -e "\033[44;1;37m        Redefina un usuario          \033[0m"
 awk -F : '$3 > 900 { print $1 }' /etc/passwd |grep -v "nobody" |grep -vi polkitd |grep -vi system- |grep -vi openvpn|sort |nl -s ") "
  if [[ "$NUMBEROFCLIENTS" = '1' ]]; then
  read -p "Selecione um usuario [1]: " CLIENTNUMBER
@@ -22,13 +22,13 @@ echo ""
 fi
 if [[ $CLIENTNUMBER -gt $NUMBEROFCLIENTS ]]
 then
-echo -e "\033[1;31mErro!! \033[0;31mVocê digitou um número inválido!\033[0m"
+echo -e "\033[1;31mErro!! \033[0;31mVocê digite un numero inválido!\033[0m"
 exit
 else
 echo ""
 fi
 if [[ $CLIENTNUMBER -lt 1 ]]; then
-echo -e "\033[1;31mErro!! \033[0;31mVocê digitou um número inválido!\033[0m"
+echo -e "\033[1;31mErro!! \033[0;31mUsted digito un número inválido!\033[0m"
 exit
 else
 echo ""
@@ -39,10 +39,10 @@ echo " "
 echo -e "\033[44;1;37m O que vc deseja redefinir para \033[1;33m$name \033[44;1;37m?\033[0m
 \033[1;32m
   1) Numero de logins
-  2) Data de expiraçao
-  3) Mudar senha do usuario
+  2) Datos de expiracion
+  3) Mudar senha de usuario
   4) Deletar usuario
-  5) Deletar e desconectar todos do usuario
+  5) Deletar y desconectar todos do usuario
   6) Desconectar todos do usuario\033[0m"
 echo " "
 read -p "opção [1-6]: " option
