@@ -5,13 +5,13 @@ then
 echo -e "\033[44;1;37m        Crear Usuário          \033[0m"
 	echo -e "\033[1;32mNombre del nuevo usuario:\033[0;37m"; read -p " " name
 	echo -e "\033[1;32mContraseña para el usuario $name:\033[0;37m"; read -p " " pass
-	echo -e "\033[1;32mQuantos dias usuario $name deve durar:\033[0;37m"; read -p " " daysrnf
+	echo -e "\033[1;32mCuantos dias usuario $name debe durar:\033[0;37m"; read -p " " daysrnf
         echo -e "\033[1;32mLimite de Conexiones en SSH para $name: \033[0;37m"; read -p " " num
 	echo -e "\033[0m"
 
 if (echo $name | egrep '[^a-zA-Z0-9]' &> /dev/null)
 then
-echo -e "\033[1;31mErro!! \033[0;31mVocê digitou um nome de usuário inválido! \033[0m"
+echo -e "\033[1;31mError!! \033[0;31mUsted digito un nombre de usuário inválido! \033[0m"
 exit
 else
 echo "" 1> /dev/null
@@ -19,7 +19,7 @@ fi
 
 if (echo $pass | egrep '[^a-zA-Z0-9]' &> /dev/null)
 then
-echo -e "\033[1;31mErro!!\033[0;31m Você digitou uma senha inválida! \033[0m"
+echo -e "\033[1;31mError!!\033[0;31m Usted digito una pass inválida! \033[0m"
 exit
 else
 echo "" 1> /dev/null
@@ -29,8 +29,8 @@ fi
 sizemax=$(echo ${#name})
 if [[ $sizemax -gt 12 ]]
 then
-echo -e "\033[1;31mErro!! \033[0;31mVocê digitou um nome de usuário muito grande,
- Use no máximo 12 caracteres!\033[0m"
+echo -e "\033[1;31mError!! \033[0;31mUsted digito un nombre de usuário muy grande,
+ Use un máximo 12 caracteres!\033[0m"
 exit
 else
 echo "" 1> /dev/null
@@ -38,8 +38,8 @@ fi
 sizemaxpass=$(echo ${#pass})
 if [[ $sizemaxpass -gt 9 ]]
 then
-echo "\033[1;31mErro!! \033[0;31mVocê digitou uma senha muito grande,
- Use no máximo 9 caracteres!\033[0m"
+echo "\033[1;31mError!! \033[0;31mUsted digito una pass muy grande,
+ Use máximo 9 caracteres!\033[0m"
 exit
 else
 echo "" 1> /dev/null
@@ -47,22 +47,22 @@ fi
 sizemaxnum=$(echo ${#num})
 if [[ $sizemaxnum -gt 2 ]]
 then
-echo -e "\033[1;31mErro!! \033[0;31mVocê digitou Limite de Conexoes muito alto,
- É permitido no maximo 99 conexoes!\033[0m"
+echo -e "\033[1;31mError!! \033[0;31mUsted digito Limite de Conexoes muy alto,
+ Esta permitido un maximo de 99 conexiones!\033[0m"
 exit
 else
 echo "" 1> /dev/null
 fi
 if (echo $num | egrep '[^0-9]' &> /dev/null)
 then
-echo -e "\033[1;31mErro!! \033[0;31mVocê digitou um número de conexões inválido!\033[0m"
+echo -e "\033[1;31mError!! \033[0;31mUsted digito un número de conexiones inválido!\033[0m"
 exit
 else
 echo "" 1> /dev/null
 fi
 if (echo $daysrnf | egrep '[^0-9]' &> /dev/null)
 then
-echo -e "\033[1;31mErro!! \033[0;31mVocê digitou uma data inválida!\033[0m"
+echo -e "\033[1;31mErro!! \033[0;31mUsted digito una fecha inválida!\033[0m"
 exit
 else
 echo "" 1> /dev/null
@@ -97,7 +97,7 @@ clear
 else
 	if echo $(id) |grep sudo > /dev/null
 	then
-	echo "Seu usuario esta no grupo sudo"
+	echo "Su usuario esta en grupo sudo"
 	echo -e "Para virar root execute \033[1;31msudo su\033[0m"
 	echo -e "Ou execute o Usercreate como sudo. \033[1;31msudo Usercreate\033[0m"
 	else
