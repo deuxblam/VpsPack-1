@@ -14,7 +14,7 @@ else
         exit
         else
         clear
-        echo -e "Vc nao esta como usuario root, nem com seus direitos (sudo)\nPara virar root execute \033[1;31msu\033[0m e digite su pass root"
+        echo -e "Vc nao esta como usuario root, nem com seus direitos (sudo)\nPara virar root execute \033[1;31msu\033[0m e digite sua senha root"
         pack
         exit
         fi
@@ -55,26 +55,19 @@ else
 mkdir /etc/VpsPackdir/UsuariosADM
 fi
 clear
-echo -e "\033[1;37m VpsPacket © Script modificado por: \033[2;32mManahkl KB \033[0m"
+echo -e "\033[1;37m VpsPacket © Script Modified por: \033[2;32mManahkl KB \033[0m"
 echo -e "\033[1;37mEscoja las opciones:    \033[1;37mPara Salir Ctrl + C\033[1;34m
-[1] Usercreate \033[2;36m(Crear users para SSH y OpenVPN)\033[1;34m
-[2] UserRedefine \033[2;36m(Opcion para mudanzas de usuario)\033[1;34m
-[3] TransferirUsers \033[2;36m(Copiar usuarios para utros servidores)\033[1;34m
+[1] UserCreate \033[2;38m(Crear usuarios para SSH y OpenVPN)\033[1;34m
+[2] UserRedefine \033[2;38m(Opciones para mudanzas de usuario)\033[1;34m
+[3] transferirusers \033[2;36m(Copiar usuarios para otros servidores)\033[1;34m
 [4] DetalleUsuario \033[2;36m(Mostrar informacion de un unico usuario !!)\033[1;34m
 [5] DetalleUsuarios \033[2;36m(Mostrar informacion de usuarios activos !!)\033[1;34m
 [6] Usersinactive \033[2;36m(Mostrar informacion de usuarios inactivos!!)\033[1;34m
-[7] speedtest \033[2;36m(Tester de conexion [velocidade de banda])\033[1;34m
-[8] SystemDetalles \033[2;36m(Detalles sobre el Sistema)\033[1;34m
-[9] graphicsystem \033[2;36m(Detalles sobre  VpsPack)\033[1;34m
+[7] speedtest \033[2;36m(Tester de conexion [velocidad de banda])\033[1;34m
+[8] systemdetalls \033[2;36m(Detalles sobre el Sistema)\033[1;34m
+[9] graphicsystem \033[2;36m(Detalls sobre  VpsPack)\033[1;34m
 [10] Ayuda \033[2;36m(Mostrar un grafico con informacion del sistema)\033[1;34m
-[11] block \033[2;36m(Bloquear un determinado IP)\033[1;34m
-[12] desblock \033[2;36m(Desbloquear un determinado IP)\033[1;34m
-[13] add-host \033[2;36m(Adicionar un host)\033[1;34m
-[14] firewall-block \033[2;36m(Reglas iptables block torrent, icmp [RISCOS])\033[1;34m
-[15] ResetFirewall \033[2;36m(Retira todas las reglas iptables [RISCOS])\033[1;34m
-[16] backupusers \033[2;36m(Backup de usuarios para reinstalacion futura)\033[1;34m
-[17] restusers \033[2;36m(Restaurar usuarios desde el backup)\033[1;34m
-[18] banner \033[2;36m(Banner mensajes en ssh)\033[1;34m
+[11] Mas \033[2;36m(Mostrar mas opciones)\033[0m"
 read -p "[1-10]: " opcao
 
 case $opcao in
@@ -114,40 +107,12 @@ case $opcao in
   htop
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 10) 
-  ayuda
+ 10)
+  Ajuda
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  11)
-  block
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-  VpsPack;;
- 12)
-  desblock
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-  VpsPack;;
- 13)
-  add-host
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-  VpsPack;;
- 14)
-  firewall-block
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-  VpsPack;;
- 15)
-  resetFirewall
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-  VpsPack;;
- 16)
-  backupusers
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-  VpsPack;;
- 17)
-  restusers
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-  VpsPack;; 
- 18)
-  banner
+  Mais
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  *)
