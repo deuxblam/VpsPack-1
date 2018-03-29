@@ -55,19 +55,19 @@ else
 mkdir /etc/VpsPackdir/UsuariosADM
 fi
 clear
-echo -e "\033[1;37m VpsPacket © Script criado por: \033[2;32mManahkl \033[0m"
+echo -e "\033[1;37m VpsPacket © Script criado por: \033[2;36mManahkl \033[0m"
 echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\033[1;34m
-[1] Crear_Usuario \033[1;30m(Crear usuarios para SSH y OpenVPN)\033[1;34m
-[2] Redefinir_Usario \033[1;30m(Redefinir Datos De Un Usuario)\033[1;34m
-[3] Transferir_Usuarios \033[1;30m(Copiar usuarios para otros servidores)\033[1;34m
-[4] Detalle_Usuario \033[1;30m(Muestra informacion de un unico usuario !!)\033[1;34m
-[5] Detalle_Usuarios \033[1;30m(Muestra informacion de todos los usuarios !!)\033[1;34m
-[6] Usuarios_Inactivos \033[1;30m(Muestra informaçion de usuarios inactivos!!)\033[1;34m
-[7] Speedtest \033[1;30m(Testeo de conexion [velocidade de banda])\033[1;34m
-[8] Trafico \033[1;30m(Mostrar trafico de red en tiempo real)\033[1;34m
-[9] System_Detalles \033[1;30m(Detalles sobre el Sistema)\033[1;34m
-[10] Graphic_System \033[1;30m(Detalles sobre el VpsPack)\033[1;34m
-[11] Ayuda \033[1;30m(Mostrar um grafico con informacion del sistema)\033[1;34m
+[1] Crear_Usuario \033[2;36m(Crear usuarios para SSH y OpenVPN)\033[1;34m
+[2] Redefinir_Usario \033[2;36m(Redefinir Datos De Un Usuario)\033[1;34m
+[3] Transferir_Usuarios \033[2;36m(Copiar usuarios para otros servidores)\033[1;34m
+[4] Detalle_Usuario \033[2;36m(Muestra informacion de un unico usuario !!)\033[1;34m
+[5] Detalle_Usuarios \033[2;36m(Muestra informacion de todos los usuarios !!)\033[1;34m
+[6] Usuarios_Inactivos \033[2;36m(Muestra informaçion de usuarios inactivos!!)\033[1;34m
+[7] Speedtest \033[2;36m(Testeo de conexion [velocidade de banda])\033[1;34m
+[8] Trafico \033[2;36m(Mostrar trafico de red en tiempo real)\033[1;34m
+[9] System_Detalles \033[2;36m(Detalles sobre el Sistema)\033[1;34m
+[10] Graphic_System \033[2;36m(Detalles sobre el VpsPack)\033[1;34m
+[11] Ayuda \033[2;36m(Mostrar um grafico con informacion del sistema)\033[1;34m
 [12] Mas \033[2;36m(Mostrar mas opciones)\033[0m"
 read -p "[1-10]: " opcao
 
