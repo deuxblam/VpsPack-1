@@ -55,19 +55,19 @@ else
 mkdir /etc/VpsPackdir/UsuariosADM
 fi
 clear
-echo -e "\033[1;37m VpsPacket © Script Modified por: \033[2;32mManahkl KB \033[0m"
+echo -e "\033[1;37m VpsPacket © Script Modified por: \033[2;31mManahkl KB \033[0m"
 echo -e "\033[1;37mEscoja las opciones:    \033[1;37mPara Salir Ctrl + C\033[1;33m
-[1] UserCreate \033[2;36m(Crear usuarios para SSH y OpenVPN)\033[1;33m
-[2] UserRedefine \033[2;36m(Opciones para mudanzas de usuario)\033[1;33m
-[3] transferirusers \033[2;36m(Copiar usuarios para otros servidores)\033[1;33m
+[1] UserCreate \033[2;35m(Crear usuarios para SSH y OpenVPN)\033[1;33m
+[2] UserRedefine \033[2;35m(Opciones para mudanzas de usuario)\033[1;33m
+[3] transferirusers \033[2;35m(Copiar usuarios para otros servidores)\033[1;33m
 [4] DetalleUsuario \033[2;36m(Mostrar informacion de un unico usuario !!)\033[1;33m
-[5] DetalleUsuarios \033[2;36m(Mostrar informacion de usuarios activos !!)\033[1;33m
-[6] Usersinactive \033[2;36m(Mostrar informacion de usuarios inactivos!!)\033[1;33m
-[7] speedtest \033[2;36m(Tester de conexion [velocidad de banda])\033[1;33m
-[8] systemdetalls \033[2;36m(Detalles sobre el Sistema)\033[1;33m
-[9] graphicsystem \033[2;36m(Detalls sobre  VpsPack)\033[1;33m
-[10] Ayuda \033[2;36m(Mostrar un grafico con informacion del sistema)\033[1;33m
-[11] Mas \033[2;36m(Mostrar mas opciones)\033[0m"
+[5] DetalleUsuarios \033[2;35m(Mostrar informacion de usuarios activos !!)\033[1;33m
+[6] Usersinactive \033[2;35m(Mostrar informacion de usuarios inactivos!!)\033[1;33m
+[7] speedtest \033[2;35m(Tester de conexion [velocidad de banda])\033[1;33m
+[8] systemdetalls \033[2;35m(Detalles sobre el Sistema)\033[1;33m
+[9] graphicsystem \033[2;35m(Detalls sobre  VpsPack)\033[1;33m
+[10] Ayuda \033[2;35m(Mostrar un grafico con informacion del sistema)\033[1;33m
+[11] Mas \033[2;35m(Mostrar mas opciones)\033[0m"
 read -p "[1-10]: " opcao
 
 case $opcao in
