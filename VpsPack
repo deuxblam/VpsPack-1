@@ -80,47 +80,75 @@ read -p "[1-10]: " opcao
 case $opcao in
  1)
   Usercreate
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  2)
   UserRedefine
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  3)
   transferirusers
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  4)
   detalhesuser
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  5)
   detalhesusers
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
   6)
   Usersinative
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  7)
   speedtest
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  8)
   systemdetalhes
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  9)
   htop
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 10)
-  Ajuda
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+ 10) 
+  ayuda
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  11)
-  Mas
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  block
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
+  VpsPack;;
+ 12)
+  desblock
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
+  VpsPack;;
+ 13)
+  add-host
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
+  VpsPack;;
+ 14)
+  firewall-block
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
+  VpsPack;;
+ 15)
+  resetFirewall
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
+  VpsPack;;
+ 16)
+  backupusers
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
+  VpsPack;;
+ 17)
+  restusers
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
+  VpsPack;; 
+ 18)
+  banner
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  *)
   id > /dev/null 2> /dev/null
