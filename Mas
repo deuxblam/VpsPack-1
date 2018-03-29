@@ -1,22 +1,29 @@
 #!/bin/bash
-echo -e "\033[1;37mEscoja las opciones:    \033[1;37mPara Salir Ctrl + C\033[1;34m
+echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\033[1;34m
 [1] Usercreate \033[2;36m(Criar usuarios para SSH e OpenVPN)\033[1;34m
 [2] UserRedefine \033[2;36m(Opções para mudanças no usuario)\033[1;34m
 [3] detalhesuser \033[2;36m(Mostra informações de um unico usuario !!)\033[1;34m
 [4] detalhesusers \033[2;36m(Mostra informações de todos os usuarios !!)\033[1;34m
 [5] speedtest \033[2;36m(Teste de conexão [velocidade de banda])\033[1;34m
-[6] systemdetalhes \033[2;36m(Detalhes sobre o Sistema)\033[1;34m
-[7] graphicsystem \033[2;36m(Detalhes sobre o VpsPack)\033[1;34m
-[8] Ajuda \033[2;36m(Mostrar um grafico com informações do sistema)\033[1;34m
-[9] block \033[2;36m(Bloquear um determinado IP)\033[1;34m
-[10] desblock \033[2;36m(Desbloquear um determinado IP)\033[1;34m
-[11] add-host \033[2;36m(Adicionar um host)\033[1;34m
-[12] firewall-block \033[2;36m(Regras iptables block torrent, icmp [RISCOS])\033[1;34m
-[13] ResetFirewall \033[2;36m(Retira todas as regras iptables [RISCOS])\033[1;34m
-[14] backupusers \033[2;36m(Backup dos usuarios para reinstalação futura)\033[1;34m
-[15] restusers \033[2;36m(Restaurar usuarios feito backup)\033[1;34m
-[16] banner \033[2;36m(Banner mensagem no ssh)\033[1;34m
-[17] Atualizar \033[2;36m(Atualizar VpsPack e Configurações)\033[0m"
+[6] Trafego \033[2;36m(Mostrar trafego da rede em tempo real)\033[1;34m
+[7] systemdetalhes \033[2;36m(Detalhes sobre o Sistema)\033[1;34m
+[8] graphicsystem \033[2;36m(Detalhes sobre o VpsPack)\033[1;34m
+[9] Ajuda \033[2;36m(Mostrar um grafico com informações do sistema)\033[1;34m
+[10] Usercreate-noroot \033[2;36m(Criar usuario Adiministrador sem privilegio root)\033[1;34m
+[11] UserDel-noroot \033[2;36m(Apagar usuarios Adiministrador)\033[1;34m
+[12] CrtCreate \033[2;36m(Criar arquivo com certificado OpenVPN)\033[1;34m
+[13] CrtDel \033[2;36m(Apagar certificado OpenVPN)\033[1;34m
+[14] rootuser \033[2;36m(Criar usuario com privilegio root)\033[1;34m
+[15] block \033[2;36m(Bloquear um determinado IP)\033[1;34m
+[16] desblock \033[2;36m(Desbloquear um determinado IP)\033[1;34m
+[17] add-host \033[2;36m(Adicionar um host)\033[1;34m
+[18] firewall-block \033[2;36m(Regras iptables block torrent, icmp [RISCOS])\033[1;34m
+[19] ResetFirewall \033[2;36m(Retira todas as regras iptables [RISCOS])\033[1;34m
+[20] backupusers \033[2;36m(Backup dos usuarios para reinstalação futura)\033[1;34m
+[21] restusers \033[2;36m(Restaurar usuarios feito backup)\033[1;34m
+[22] banner \033[2;36m(Banner mensagem no ssh)\033[1;34m
+[23] Login-noroot \033[2;36m(Faça login com um usuario Administrador)\033[1;34m
+[24] Atualizar \033[2;36m(Atualizar VpsPack e Configurações)\033[0m"
 read -p "[1-24]: " opcao
 
 case $opcao in
@@ -28,18 +35,22 @@ case $opcao in
   UserRedefine
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
- 3)
+  3)
   detalhesuser
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
- 5)
+ 4)
   detalhesusers
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
- 6)
+  5)
   speedtest
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
-  VpsPack;; 
+  VpsPack;;
+ 6)
+  nbwmon
+  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  VpsPack;;
  7)
   systemdetalhes
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
@@ -53,38 +64,62 @@ case $opcao in
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
  10)
-  block
+  Usercreate-noroot
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
  11)
-  desblock
+  UserDel-noroot
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
- 12)
-  add-host
+  12)
+  CrtCreate
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
  13)
-  firewall-block
+  CrtDel
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
- 14)
-  ResetFirewall
+  14)
+  rootuser
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
  15)
-  backupusers
+  block
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
  16)
+  desblock
+  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  VpsPack;;
+ 17)
+  add-host
+  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  VpsPack;;
+ 18)
+  firewall-block
+  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  VpsPack;;
+ 19)
+  ResetFirewall
+  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  VpsPack;;
+ 20)
+  backupusers
+  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  VpsPack;;
+ 21)
   restusers
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;; 
- 17)
+ 22)
   banner
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;; 
- 18)
+ 23)
+  Login-noroot
+  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  VpsPack;; 
+ 24)
   Atualizar
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
   VpsPack;;
