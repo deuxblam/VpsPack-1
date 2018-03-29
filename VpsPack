@@ -68,15 +68,6 @@ echo -e "\033[1;31mPara que la instalacion sea correcta se necesita una ip.
 Digite su ip !\033[0m"
 read -p ": " ip
 clear
-echo -e "\033[1;31m-----> \033[01;37mScript VPSPACK 2.3 Mnahkl\033[0m"
-echo -e "\033[1;31m-----> \033[01;37mSistema:\033[1;31m $sistema"
-echo -e "\033[1;31m-----> \033[01;37mSu ip agregada:\033[1;31m $ip"
-echo -e "\033[1;31m-----> \033[1;37mSQUID:\033[1;31m 80, 8080, 8799, 3128\033[0m"
-echo -e "\033[1;31m-----> \033[1;37mSSH Puertos: \033[1;31m443, 22\033[0m"
-echo -e "\033[1;31m-----> \033[1;37mDropbear Puertos: \033[1;31m444\033[0m"
-echo -e "\033[1;31m-----> \033[1;37mSSH IPS/Hosts: \033[1;31m$ip, localhost, 127.0.0.1\033[0m"
-clear
-
 
 echo -e "\033[1;37m VpsPacket © Script modificado por: \033[2;32mManahkl \033[0m"
 echo -e "\033[1;37mEscogj las Opciones:    \033[1;37mPara Salir Ctrl + C\033[1;34m
