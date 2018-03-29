@@ -108,7 +108,7 @@ case $opcao in
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  10)
-  Ajuda
+  Ayuda
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  11)
