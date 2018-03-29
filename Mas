@@ -27,7 +27,7 @@ case $opcao in
   UserRedefine
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
-  3)
+ 3)
   detalhesuser
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
@@ -35,7 +35,7 @@ case $opcao in
   detalhesusers
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
-  5)
+ 5)
   speedtest
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
