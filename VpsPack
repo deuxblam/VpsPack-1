@@ -67,7 +67,14 @@ echo -e "\033[1;37mEscoja las opciones:    \033[1;37mPara Salir Ctrl + C\033[1;3
 [8] SystemDetalles \033[2;36m(Detalles sobre el Sistema)\033[1;34m
 [9] graphicsystem \033[2;36m(Detalles sobre  VpsPack)\033[1;34m
 [10] Ayuda \033[2;36m(Mostrar un grafico con informacion del sistema)\033[1;34m
-[11] Mas \033[2;36m(Mostrar mas opciones)\033[0m"
+[11] block \033[2;36m(Bloquear un determinado IP)\033[1;34m
+[12] desblock \033[2;36m(Desbloquear un determinado IP)\033[1;34m
+[13] add-host \033[2;36m(Adicionar un host)\033[1;34m
+[14] firewall-block \033[2;36m(Reglas iptables block torrent, icmp [RISCOS])\033[1;34m
+[15] ResetFirewall \033[2;36m(Retira todas las reglas iptables [RISCOS])\033[1;34m
+[16] backupusers \033[2;36m(Backup de usuarios para reinstalacion futura)\033[1;34m
+[17] restusers \033[2;36m(Restaurar usuarios desde el backup)\033[1;34m
+[18] banner \033[2;36m(Banner mensajes en ssh)\033[1;34m
 read -p "[1-10]: " opcao
 
 case $opcao in
