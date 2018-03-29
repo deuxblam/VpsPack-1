@@ -71,19 +71,19 @@ case $opcao in
   firewall-block
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 12)
+ 14)
   resetFirewall
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 13)
+ 15)
   backupusers
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 14)
+ 16)
   restusers
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;; 
- 15)
+ 17)
   banner
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;; 
