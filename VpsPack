@@ -55,70 +55,70 @@ else
 mkdir /etc/VpsPackdir/UsuariosADM
 fi
 clear
-echo -e "\033[1;37m VpsPacket © Script criado por: \033[2;32mMatheus Larcher \033[0m"
+echo -e "\033[1;37m VpsPacket © Script criado por: \033[2;32mManahkl \033[0m"
 echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\033[1;34m
-[1] Usercreate \033[2;36m(Criar usuarios para SSH e OpenVPN)\033[1;34m
-[2] UserRedefine \033[2;36m(Opções para mudanças no usuario)\033[1;34m
-[3] transferirusers \033[2;36m(Copiar usuarios para outros servidores)\033[1;34m
-[4] detalhesuser \033[2;36m(Mostra informações de um unico usuario !!)\033[1;34m
-[5] detalhesusers \033[2;36m(Mostra informações dos usuarios ativos !!)\033[1;34m
-[6] Usersinative \033[2;36m(Mostra informações dos usuarios inativos!!)\033[1;34m
-[7] speedtest \033[2;36m(Teste de conexão [velocidade de banda])\033[1;34m
-[8] Trafego \033[2;36m(Mostrar trafego da rede em tempo real)\033[1;34m
-[9] systemdetalhes \033[2;36m(Detalhes sobre o Sistema)\033[1;34m
-[10] graphicsystem \033[2;36m(Detalhes sobre o VpsPack)\033[1;34m
-[11] Ajuda \033[2;36m(Mostrar um grafico com informações do sistema)\033[1;34m
-[12] Mais \033[2;36m(Mostrar mais opções)\033[0m"
+[1] Crear_Usuario \033[1;30m(Crear usuarios para SSH y OpenVPN)\033[1;34m
+[2] Redefinir_Usario \033[1;30m(Redefinir Datos De Un Usuario)\033[1;34m
+[3] Transferir_Usuarios \033[1;30m(Copiar usuarios para otros servidores)\033[1;34m
+[4] Detalle_Usuario \033[1;30m(Muestra informacion de un unico usuario !!)\033[1;34m
+[5] Detalle_Usuarios \033[1;30m(Muestra informacion de todos los usuarios !!)\033[1;34m
+[6] Usuarios_Inactivos \033[1;30m(Muestra informaçion de usuarios inactivos!!)\033[1;34m
+[7] Speedtest \033[1;30m(Testeo de conexion [velocidade de banda])\033[1;34m
+[8] Trafico \033[1;30m(Mostrar trafico de red en tiempo real)\033[1;34m
+[9] System_Detalles \033[1;30m(Detalles sobre el Sistema)\033[1;34m
+[10] Graphic_System \033[1;30m(Detalles sobre el VpsPack)\033[1;34m
+[11] Ayuda \033[1;30m(Mostrar um grafico con informacion del sistema)\033[1;34m
+[12] Mas \033[2;36m(Mostrar mas opciones)\033[0m"
 read -p "[1-10]: " opcao
 
 case $opcao in
  1)
-  Usercreate
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Crear_Usuario
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  2)
-  UserRedefine
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Redefinir_Usuarios
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  3)
-  transferirusers
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Transferir_Usuarios
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  4)
-  detalhesuser
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Detalle_Usuario
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  5)
-  detalhesusers
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Detalle_Uusuarios
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
   6)
-  Usersinative
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Usuarios_Inactivos
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  7)
-  speedtest
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Speedtest
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  8)
-  nbwmon
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Trafico
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  9)
-  systemdetalhes
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  System_Detalles
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  10)
   htop
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  11)
-  Ajuda
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Ayuda
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  12)
-  Mais
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Mas
+  read -n1 -r -p " Presione una tecla para Abrir nuevamente VpsPack..."
   VpsPack;;
  *)
   id > /dev/null 2> /dev/null
