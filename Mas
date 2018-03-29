@@ -15,8 +15,7 @@ echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\03
 [13] ResetFirewall \033[2;36m(Retira todas as regras iptables [RISCOS])\033[1;33m
 [14] BackupUsers \033[2;36m(Backup dos usuarios para reinstalação futura)\033[1;33m
 [15] RestUsers \033[2;36m(Restaurar usuarios feito backup)\033[1;33m
-[16] Banner \033[2;36m(Banner mensagem no ssh)\033[1;33m
-[17] Actualizar \033[2;36m(Atualizar VpsPack e Configurações)\033[0m"
+[16] Banner \033[2;36m(Banner mensagem no ssh)\033[0m"
 read -p "[1-24]: " opcao
 
 case $opcao in
