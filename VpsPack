@@ -54,72 +54,96 @@ echo ""
 else
 mkdir /etc/VpsPackdir/UsuariosADM
 fi
+
+function configurarsquid(){
 clear
-echo -e "\033[1;37m VpsPacket © Script criado por: \033[2;32mManahkl \033[0m"
-echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\033[1;34m
-[1] Usercreate \033[2;36m(Criar usuarios para SSH e OpenVPN)\033[1;34m
-[2] UserRedefine \033[2;36m(Opções para mudanças no usuario)\033[1;34m
-[3] transferirusers \033[2;36m(Copiar usuarios para outros servidores)\033[1;34m
-[4] detalhesuser \033[2;36m(Mostra informações de um unico usuario !!)\033[1;34m
-[5] detalhesusers \033[2;36m(Mostra informações dos usuarios ativos !!)\033[1;34m
-[6] Usersinative \033[2;36m(Mostra informações dos usuarios inativos!!)\033[1;34m
-[7] speedtest \033[2;36m(Teste de conexão [velocidade de banda])\033[1;34m
-[8] Trafego \033[2;36m(Mostrar trafego da rede em tempo real)\033[1;34m
-[9] systemdetalhes \033[2;36m(Detalhes sobre o Sistema)\033[1;34m
-[10] graphicsystem \033[2;36m(Detalhes sobre o VpsPack)\033[1;34m
-[11] Ajuda \033[2;36m(Mostrar um grafico com informações do sistema)\033[1;34m
-[12] Mais \033[2;36m(Mostrar mais opções)\033[0m"
+cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/	//' > /etc/so 
+if [ -f /etc/lsb-release ]
+then
+sistema=$(cat /etc/lsb-release |grep "DISTRIB_DESCRIPTION" | awk -F = '{print $2}' |sed 's/"//g')
+else
+sistema=Null
+fi
+echo -e "\033[1;31mPara que la instalacion sea correcta se necesita una ip.
+Digite su ip !\033[0m"
+read -p ": " ip
+clear
+echo -e "\033[1;31m-----> \033[01;37mScript VPSPACK 2.3 Mnahkl\033[0m"
+echo -e "\033[1;31m-----> \033[01;37mSistema:\033[1;31m $sistema"
+echo -e "\033[1;31m-----> \033[01;37mSu ip agregada:\033[1;31m $ip"
+echo -e "\033[1;31m-----> \033[1;37mSQUID:\033[1;31m 80, 8080, 8799, 3128\033[0m"
+echo -e "\033[1;31m-----> \033[1;37mSSH Puertos: \033[1;31m443, 22\033[0m"
+echo -e "\033[1;31m-----> \033[1;37mDropbear Puertos: \033[1;31m444\033[0m"
+echo -e "\033[1;31m-----> \033[1;37mSSH IPS/Hosts: \033[1;31m$ip, localhost, 127.0.0.1\033[0m"
+clear
+
+
+echo -e "\033[1;37m VpsPacket © Script modificado por: \033[2;32mManahkl \033[0m"
+echo -e "\033[1;37mEscogj las Opciones:    \033[1;37mPara Salir Ctrl + C\033[1;34m
+[1] CrearUsuario \033[2;36m(Crear usuarios para SSH y OpenVPN)\033[1;34m
+[2] RedefinirUsuario \033[2;36m(Opcion para modificar un usuario)\033[1;34m
+[3] TransferirUsuarios \033[2;36m(Copiar usuarios para otros servidores)\033[1;34m
+[4] DetalleUsuario \033[2;36m(Mostrar informacion de un unico usuario !!)\033[1;34m
+[5] DetalleUsuarios \033[2;36m(Mostrar informacion de usuarios activos !!)\033[1;34m
+[6] UsersInactivos \033[2;36m(Mostrar informacion de usuarios inactivos!!)\033[1;34m
+[7] Speedtest \033[2;36m(Test de conexion [velocidad de banda])\033[1;34m
+[8] SystemDetalles \033[2;36m(Detalles sobre el Sistema)\033[1;34m
+[9] GraphicSystem \033[2;36m(Detalles sobre el VpsPack)\033[1;34m
+[10] Ayuda \033[2;36m(Mostrar un grafico com informacion de sistema)\033[1;34m
+[11] Mas \033[2;36m(Mostrar mas opciones)\033[0m"
+[12] ConfigurarSquidOpensshDropbear \033[2;36m(Configuracion para Openssh y Dropbear)\1:34m
 read -p "[1-10]: " opcao
 
 case $opcao in
  1)
   Usercreate
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  2)
   UserRedefine
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPackk..."
   VpsPack;;
  3)
   transferirusers
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  4)
   detalhesuser
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  5)
   detalhesusers
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
   6)
   Usersinative
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  7)
   speedtest
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  8)
-  nbwmon
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  systemdetalhes
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  9)
-  systemdetalhes
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  htop
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  10)
-  htop
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Ajuda
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  11)
-  Ajuda
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
+  Mais
+  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  12)
-  Mais
-  read -n1 -r -p " Pressione uma tecla para Abrir novamente o VpsPack..."
-  VpsPack;;
+ ConfigurarSquidOpensshDropbear
+ read -n1 -r -p 
+ VpsPack;;
+ 
  *)
   id > /dev/null 2> /dev/null
 esac
