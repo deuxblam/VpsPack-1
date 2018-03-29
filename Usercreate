@@ -2,11 +2,11 @@
 
 if [ $(id -u) -eq 0 ]
 then
-echo -e "\033[44;1;37m        Criar Usuário          \033[0m"
-	echo -e "\033[1;32mNome do novo usuario:\033[0;37m"; read -p " " name
-	echo -e "\033[1;32mSenha para o usuario $name:\033[0;37m"; read -p " " pass
+echo -e "\033[44;1;37m        Crear Usuário          \033[0m"
+	echo -e "\033[1;32mNombre del nuevo usuario:\033[0;37m"; read -p " " name
+	echo -e "\033[1;32mContraseña para el usuario $name:\033[0;37m"; read -p " " pass
 	echo -e "\033[1;32mQuantos dias usuario $name deve durar:\033[0;37m"; read -p " " daysrnf
-        echo -e "\033[1;32mLimite de Conexoes no SSH para $name: \033[0;37m"; read -p " " num
+        echo -e "\033[1;32mLimite de Conexiones en SSH para $name: \033[0;37m"; read -p " " num
 	echo -e "\033[0m"
 
 if (echo $name | egrep '[^a-zA-Z0-9]' &> /dev/null)
@@ -82,9 +82,9 @@ clear
                 echo -e "\033[1;36m                        \033[0m"
                 echo -e "\033[1;36m                        \033[2;40m"
                 echo -e "\033[1;36mUsuario: \033[2;37m$name"
-		echo -e "\033[1;36mSenha: \033[2;37m$pass"
+		echo -e "\033[1;36mContraseña: \033[2;37m$pass"
 		echo -e "\033[1;36mExpira: \033[2;37m$datexp"
-                echo -e "\033[1;36mConexoes(SSH): \033[2;37m$num"
+                echo -e "\033[1;36mConexiones(SSH): \033[2;37m$num"
                 echo -e "\033[1;36m                        \033[2;40m"
                 echo -e "\033[1;36m                        \033[0m"
                 echo -e "\033[1;32m################################\033[0m"
