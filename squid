@@ -40,4 +40,4 @@ echo -e "\033[1;30m            Puertos Disponibles / En ejecucion               
 echo -e "\033[1;30m-----------------------------------------------------------\033[0m"
 netstat -tulpn | awk -vOFS='\t' '/^tcp/{print $4,$7} /^udp/{print $4,$6}' | grep "$filter"
 }
-fi 
+do
