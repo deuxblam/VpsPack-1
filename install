@@ -50,7 +50,7 @@ do
 rm /bin/$arqs 2>/dev/null
 mv $arqs /bin
 chmod +x /bin/$arqs
-wget -o /dev/null -O- https://raw.githubusercontent.com/powermx/vpspack/master/dropbear > /root/dropbear
+wget -o /dev/null -O- https://raw.githubusercontent.com/manahkl/vpspack/master/dropbear > /root/dropbear
 chmod +x /root/dropbear
 done
 echo -e "\033[1;37mConcluido, Ejecute el comando \033[1;33mVpsPack\033[1;37m como root \033[0m"
