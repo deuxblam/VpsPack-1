@@ -65,9 +65,9 @@ echo -e "\033[1;31mEscoja las opciones:    \033[1;31mPara Salir Ctrl + C\033[1;3
 [3] DetalleDeUsuario \033[2;33m(Mostrar informacion de un unico usuario !!)\033[1;36m
 [4] DetallesDeUsuarios \033[2;33m(Mostrar informacion de usuarios activos !!)\033[1;36m
 [5] UsuariosInactivos \033[2;33m(Mostrar informacion de usuarios inactivos!!)\033[1;36m
-[6] BadVpn \033[1;30m(Instala badvpn para tunnel udp)\033[1;33m
-[7] BadVpn_Start \033[1;30m(Activar llamadas voip, juegos online, etc)\033[1;33m
-[8] BadVpn_Stop \033[1;30m(Parar servicio de badvpn)\033[1;33m
+[\033[1;30m06\033[1;33m] BadVpn \033[1;30m(Instala badvpn para tunnel udp)\033[1;33m
+[\033[1;30m07\033[1;33m] BadVpn_Start \033[1;30m(Activar llamadas voip, juegos online, etc)\033[1;33m
+[\033[1;30m08\033[1;33m] BadVpn_Stop \033[1;30m(Parar servicio de badvpn)\033[1;33m
 [9] Speedtest \033[2;33m(Tester de conexion [velocidad de banda])\033[1;36m
 [10] SystemDetalls \033[2;33m(Detalles sobre el Sistema)\033[1;36m
 [11] GraphicSystem \033[2;33m(Detalles sobre VpsPack)\033[1;36m
@@ -96,18 +96,12 @@ case $opcao in
   Usersinative
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
- 6)
-  badvpn_install
-  read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..." 
-  VpsPack;;
- 7)
-   badvpn start
-   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-   VpsPack;;
- 8)
-   badvpn stop
-   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
-   VpsPack;;
+ 6 | 06 )
+   badvpn_install;;
+  7 | 07 )
+   badvpn start;;
+  8 | 08 )
+   badvpn stop;;
  9)
   speedtest
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
