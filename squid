@@ -30,4 +30,7 @@ PasswordAuthentication yes
 # VPSPack
 ' >> /etc/ssh/sshd_config
 } 
-esac 
+function dropbear(){
+cd ~/
+./dropbear
+}
