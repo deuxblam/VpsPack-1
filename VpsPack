@@ -56,7 +56,6 @@ mkdir /etc/VpsPackdir/UsuariosADM
 
 function badvpn_install(){
 wget https://raw.githubusercontent.com/powermx/badvpn/master/easyinstall && bash easyinstall
-fi
 
 clear
 echo -e "\033[1;37m VpsPacket © Script Modified por: \033[2;32mManahkl KB \033[0m"
