@@ -198,11 +198,6 @@ cp client.tar /home/vps/public_html/
 
 cd
 
-# install badvpn
-
-wget http://phreaker56.obex.pw/badvpnsetup.sh"
-chmod +x badvpnsetup.sh
-screen -AmdS badvpnsetup.sh --listen-addr 127.0.0.1:7300
 
 # install mrtg
 
