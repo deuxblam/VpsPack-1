@@ -16,8 +16,7 @@ echo -e "\033[1;32mEscoja las opciones:    \033[1;32mPara Salir Ctrl + C\033[1;3
 [14] BackupUsers \033[2;36m(Backup de usuarios para reinstalacion futura)\033[1;33m
 [15] RestUsers \033[2;36m(Restaurar usuarios desde backup)\033[1;33m
 [16] Banner \033[2;36m(Banner mensaje en ssh)\033[1;33m
-[17] Herramientas \033[2;36m(Herramientas [\033[1;31mEXPERIMENTAL\033[1;30m])\033[1;33m
-[18] Desinstalar \033[2;32m(Remover VpsPack)\033[0m"
+[17] Desinstalar \033[2;32m(Remover VpsPack)\033[0m"
 read -p "[1-24]: " opcao
 
 case $opcao in
@@ -86,8 +85,6 @@ case $opcao in
   read -n1 -r -p " Presione una tecla para abrir nuevamente VpsPack..."
   VpsPack;;
  17)
-  tools;;
- 18)
   Desinstalar;;
   *)
   id > /dev/null 2> /dev/null
