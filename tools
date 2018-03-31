@@ -18,7 +18,7 @@ def slowprint(s):
 banner = '''
                                                                                        
 ========= ToolMaster =======\033[91m
-========== @Mnahkl=========\033[92m
+========== @Manahkl=========\033[92m
 '''
 print banner
 def menu():
@@ -36,7 +36,7 @@ def menu():
 \033[91m 11\033[92m)\033[96m Info
 \033[91m 0 \033[92m)\033[96m Salir
 '''
-slowprint("\033[1;91mpowermx.org" + "\n - toolmaster")
+slowprint("\033[1;91mManahkl" + "\n - toolmaster")
 
 menu()
 def ext():
