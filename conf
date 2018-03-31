@@ -198,6 +198,17 @@ cp client.tar /home/vps/public_html/
 
 cd
 
+# install badvpn
+
+wget -O /usr/bin/badvpn-udpgw "https://raw.github.com/choirulanam217/script/master/conf/badvpn-udpgw"
+
+sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local
+
+chmod +x /usr/bin/badvpn-udpgw
+
+screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300
+
+
 
 # install mrtg
 
